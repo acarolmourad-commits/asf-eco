@@ -3,111 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ASF Eco — Surf Sustentável e Limpeza de Praias</title>
-<meta name="description" content="ASF Eco: mutirões de limpeza, impacto registrado e surf sustentável. Satélite do app ASF — Associação de Surf Feminino.">
-<link rel="canonical" href="https://acarolmourad-commits.github.io/asf-eco/">
+<title>ASF Eco — Sustentabilidade e limpeza de praias</title>
+<meta name="description" content="Registre mutirões de limpeza de praia, acumule pontos ecológicos e proteja o oceano. Satélite do app ASF.">
 <style>
-:root{--azul:#0a4d68;--verde:#2e8b57;--areia:#f6f1e7;--coral:#ff6f61;--texto:#222}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--areia);color:var(--texto);line-height:1.6}
-header{background:linear-gradient(135deg,var(--azul),var(--verde));color:#fff;padding:2.5rem 1rem;text-align:center}
-header h1{font-size:2rem;margin-bottom:.5rem}
-header p{opacity:.9;max-width:640px;margin:0 auto}
-nav{background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.08);padding:.75rem 1rem;display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;position:sticky;top:0;z-index:10}
-nav a{color:var(--azul);text-decoration:none;font-weight:600;font-size:.82rem;padding:.4rem .7rem;border-radius:999px;border:1px solid var(--verde);transition:.2s}
-nav a:hover{background:var(--verde);color:#fff}
-main{max-width:860px;margin:2rem auto;padding:0 1rem}
-section{background:#fff;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-h2{color:var(--azul);margin-bottom:.75rem}
-.stats{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0}
-.stat{flex:1;min-width:120px;background:#eef7f0;border-radius:10px;padding:1rem;text-align:center;border-top:4px solid var(--verde)}
-.stat b{display:block;font-size:1.6rem;color:var(--verde)}
-label{display:block;font-size:.85rem;font-weight:600;margin:.6rem 0 .2rem;color:var(--azul)}
-input,select{width:100%;padding:.6rem;border:1px solid #ccc;border-radius:8px;font-size:.9rem;font-family:inherit}
-button.salvar{background:var(--verde);color:#fff;border:none;padding:.8rem 1.6rem;border-radius:999px;font-weight:700;cursor:pointer;margin-top:1rem;font-size:1rem}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
-.card{background:var(--areia);border-radius:10px;padding:1rem;border-left:4px solid var(--coral)}
-.card h3{color:var(--verde);font-size:1rem;margin-bottom:.4rem}
-.cta{display:inline-block;background:var(--coral);color:#fff;padding:.8rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:700;margin-top:1rem}
-footer{text-align:center;padding:2rem 1rem;color:#666;font-size:.85rem}
-footer a{color:var(--verde)}
+:root{--rosa:#e63970;--areia:#fff5ee;--mar:#0b6e6e;--escuro:#12303a}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,sans-serif}
+body{background:var(--areia);color:var(--escuro)}
+header{background:linear-gradient(135deg,#134e5e,#71b280);color:#fff;padding:2.5rem 1rem;text-align:center}
+nav{background:var(--escuro);display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem;padding:.5rem;position:sticky;top:0;z-index:10}
+nav a{color:#fff;text-decoration:none;padding:.45rem .7rem;border-radius:.5rem;font-size:.85rem}
+nav a:hover,nav a.ativo{background:var(--rosa)}
+main{max-width:720px;margin:0 auto;padding:2rem 1rem}
+.card{background:#fff;border-radius:1rem;padding:1.5rem;margin-bottom:1.5rem;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.card h2{color:#134e5e;margin-bottom:.6rem}
+label{display:block;font-size:.85rem;margin-top:.7rem;color:#555}
+input,select{width:100%;padding:.6rem;border:2px solid #eee;border-radius:.5rem;margin-top:.2rem;font-size:1rem}
+button.salvar{background:#71b280;color:#fff;border:none;padding:.8rem 1.6rem;border-radius:2rem;font-size:1rem;cursor:pointer;margin-top:1rem}
+.stats{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-bottom:1rem}
+.stats div{background:var(--areia);border-radius:.75rem;padding:.8rem 1.2rem;text-align:center;min-width:110px}
+.stats strong{display:block;font-size:1.4rem;color:#2e7d32}
+.reg{background:var(--areia);border-radius:.75rem;padding:.9rem;margin:.5rem 0;display:flex;justify-content:space-between;align-items:center}
+.reg .del{background:none;border:none;cursor:pointer;color:var(--rosa);font-size:1.1rem}
+.badge{display:inline-block;background:#dff0d8;color:#2e7d32;border-radius:1rem;padding:.3rem .9rem;font-weight:bold;margin-top:.5rem}
+footer{background:var(--escuro);color:#cfe;padding:1.5rem;text-align:center;font-size:.85rem;margin-top:2rem}
+footer a{color:#ff9ec0}
 </style>
 </head>
 <body>
-<header>
-<h1>🌱 ASF Eco</h1>
-<p>Surf sustentável: registre mutirões de limpeza, some seu impacto e proteja as praias que a gente ama.</p>
-</header>
+<header><h1>🌱 ASF Eco</h1><p>Limpeza de praias e sustentabilidade no surf feminino</p></header>
 <nav>
-<a href="https://acarolmourad-commits.github.io/asf-app/">App ASF</a>
-<a href="https://acarolmourad-commits.github.io/asf-praias/">Praias</a>
-<a href="https://acarolmourad-commits.github.io/asf-previsao/">Previsão</a>
-<a href="https://acarolmourad-commits.github.io/asf-treino/">Treino</a>
-<a href="https://acarolmourad-commits.github.io/asf-eventos/">Eventos</a>
-<a href="https://acarolmourad-commits.github.io/asf-glossario/">Glossário</a>
-<a href="https://acarolmourad-commits.github.io/asf-seguranca/">Segurança</a>
-<a href="https://acarolmourad-commits.github.io/asf-comunidade/">Comunidade</a>
-<a href="https://acarolmourad-commits.github.io/asf-equipamento/">Equipamento</a>
-<a href="https://acarolmourad-commits.github.io/asf-quiz/">Quiz</a>
-<a href="https://acarolmourad-commits.github.io/asf-nutricao/">Nutrição</a>
-<a href="https://acarolmourad-commits.github.io/asf-viagens/">Viagens</a>
-<a href="https://acarolmourad-commits.github.io/asf-historia/">História</a>
-<a href="https://acarolmourad-commits.github.io/asf-bemestar/">Bem-estar</a>
-<a href="https://acarolmourad-commits.github.io/asf-diario/">Diário</a>
+<a href="https://acarolmourad-commits.github.io/asf-app/">🏄‍♀️ App</a>
+<a href="https://acarolmourad-commits.github.io/asf-praias/">🏖️ Praias</a>
+<a href="https://acarolmourad-commits.github.io/asf-previsao/">🌊 Previsão</a>
+<a href="https://acarolmourad-commits.github.io/asf-treino/">💪 Treino</a>
+<a href="https://acarolmourad-commits.github.io/asf-diario/">📝 Diário</a>
+<a href="https://acarolmourad-commits.github.io/asf-yoga/">🧘‍♀️ Yoga</a>
+<a href="https://acarolmourad-commits.github.io/asf-eventos/">📅 Eventos</a>
+<a href="https://acarolmourad-commits.github.io/asf-glossario/">📖 Glossário</a>
+<a href="https://acarolmourad-commits.github.io/asf-comunidade/">🌸 Comunidade</a>
+<a href="https://acarolmourad-commits.github.io/asf-seguranca/">🛟 Segurança</a>
+<a href="https://acarolmourad-commits.github.io/asf-sos/">🆘 SOS</a>
+<a href="https://acarolmourad-commits.github.io/asf-equipamento/">🏄 Equipamento</a>
+<a href="https://acarolmourad-commits.github.io/asf-quiz/">❓ Quiz</a>
+<a class="ativo" href="https://acarolmourad-commits.github.io/asf-eco/">🌱 Eco</a>
 </nav>
 <main>
-<section>
-<h2>Seu impacto</h2>
-<div class="stats">
-<div class="stat"><b id="acoes">0</b>ações</div>
-<div class="stat"><b id="kg">0</b>kg coletados</div>
-<div class="stat"><b id="praias">0</b>praias limpas</div>
+<div class="card"><h2>Seu impacto 🌎</h2><div class="stats">
+<div><strong id="kg">0</strong>kg coletados</div><div><strong id="acoes">0</strong>ações</div><div><strong id="pontos">0</strong>eco-pontos</div>
+</div><div style="text-align:center"><span class="badge" id="badge">🌱 Semente</span></div></div>
+<div class="card"><h2>Registrar ação ♻️</h2>
+<label>Data</label><input type="date" id="data">
+<label>Praia</label><input type="text" id="praia" placeholder="Ex.: Maresias">
+<label>Tipo de ação</label><select id="tipo"><option>Mutirão de limpeza</option><option>Coleta individual</option><option>Reciclagem</option><option>Educação ambiental</option></select>
+<label>Lixo coletado (kg)</label><input type="number" id="peso" min="0" step="0.1" placeholder="2.5">
+<button class="salvar" onclick="salvar()">Registrar</button>
+<p style="margin-top:.7rem;font-size:.85rem;color:#777">Organize mutirões pela <a href="https://acarolmourad-commits.github.io/asf-comunidade/">Comunidade</a> e divulgue nos <a href="https://acarolmourad-commits.github.io/asf-eventos/">Eventos</a>.</p>
 </div>
-</section>
-<section>
-<h2>Registrar ação de limpeza</h2>
-<label for="e-praia">Praia</label>
-<input id="e-praia" placeholder="Ex.: Praia de Boracéia">
-<label for="e-data">Data</label>
-<input id="e-data" type="date">
-<label for="e-kg">Lixo coletado (kg)</label>
-<input id="e-kg" type="number" step="0.1" min="0" value="2">
-<label for="e-tipo">Principal tipo de resíduo</label>
-<select id="e-tipo"><option>Plástico</option><option>Garrafas PET</option><option>Bitucas de cigarro</option><option>Redes de pesca</option><option>Isopor</option><option>Misto</option></select>
-<button class="salvar" onclick="salvar()">Registrar ação 🌍</button>
-</section>
-<section>
-<h2>Surfista consciente: 4 atitudes</h2>
-<div class="grid">
-<div class="card"><h3>Leve seu lixo</h3><p>Regra de ouro: tudo que vai à praia volta com você — inclusive bitucas.</p></div>
-<div class="card"><h3>Protetor reef-safe</h3><p>Prefira protetores solares minerais sem oxibenzona, que danifica corais e vida marinha.</p></div>
-<div class="card"><h3>Pranchas eco</h3><p>Considere pranchas com blanks reciclados e resinas bio, e conserte em vez de descartar.</p></div>
-<div class="card"><h3>Mobilize o pico</h3><p>Organize um mutirão de 30 min antes da sessão — poste na <a href="https://acarolmourad-commits.github.io/asf-comunidade/">Comunidade</a>!</p></div>
-</div>
-</section>
-<section>
-<h2>Conecte-se à rede ASF</h2>
-<p>Registre suas sessões no <a href="https://acarolmourad-commits.github.io/asf-diario/">Diário</a>, cuide de você no <a href="https://acarolmourad-commits.github.io/asf-bemestar/">Bem-estar</a> e veja as praias parceiras no guia de <a href="https://acarolmourad-commits.github.io/asf-praias/">Praias</a>.</p>
-<a class="cta" href="https://acarolmourad-commits.github.io/asf-app/">Abrir o App ASF</a>
-</section>
+<div class="card"><h2>Histórico 📋</h2><div id="lista"></div></div>
+<div class="card"><h2>Surf sustentável 🏄‍♀️</h2><p>O oceano é nossa casa. Prefira protetor solar reef-safe, pranchas eco (ver <a href="https://acarolmourad-commits.github.io/asf-equipamento/">Equipamento</a>) e deixe a praia sempre melhor do que encontrou. Cada kg coletado vale 10 eco-pontos!</p></div>
 </main>
-<footer>ASF Eco — parte da rede de sites satélite do <a href="https://acarolmourad-commits.github.io/asf-app/">App ASF</a> · Dados salvos localmente no seu navegador 🔒</footer>
+<footer>Parte do ecossistema <a href="https://acarolmourad-commits.github.io/asf-app/">ASF — Associação de Surf Feminino</a> · Publicado via GitHub Pages</footer>
 <script>
-const K='asf_eco_acoes';
-function carregar(){try{return JSON.parse(localStorage.getItem(K))||[]}catch(e){return[]}}
+let regs=JSON.parse(localStorage.getItem('asfeco')||'[]');
+document.getElementById('data').valueAsDate=new Date();
 function salvar(){
-const a={praia:document.getElementById('e-praia').value.trim()||'Praia local',
-data:document.getElementById('e-data').value||new Date().toISOString().slice(0,10),
-kg:+document.getElementById('e-kg').value||0,
-tipo:document.getElementById('e-tipo').value};
-const l=carregar();l.unshift(a);localStorage.setItem(K,JSON.stringify(l));render();
-alert('Ação registrada! Obrigada por cuidar do mar 🌊💚');
+ const r={data:document.getElementById('data').value,praia:document.getElementById('praia').value||'—',
+ tipo:document.getElementById('tipo').value,peso:+document.getElementById('peso').value||0};
+ if(!r.data){alert('Informe a data');return;}
+ regs.unshift(r);localStorage.setItem('asfeco',JSON.stringify(regs));render();
+ document.getElementById('praia').value='';document.getElementById('peso').value='';
 }
+function del(i){regs.splice(i,1);localStorage.setItem('asfeco',JSON.stringify(regs));render();}
 function render(){
-const l=carregar();
-document.getElementById('acoes').textContent=l.length;
-document.getElementById('kg').textContent=l.reduce((x,a)=>x+a.kg,0).toFixed(1);
-document.getElementById('praias').textContent=new Set(l.map(a=>a.praia)).size;
+ const kg=regs.reduce((s,r)=>s+r.peso,0),pts=Math.round(kg*10)+regs.length*5;
+ document.getElementById('kg').textContent=Math.round(kg*10)/10;
+ document.getElementById('acoes').textContent=regs.length;
+ document.getElementById('pontos').textContent=pts;
+ document.getElementById('badge').textContent=pts>=500?'🐋 Guardiã do Oceano':pts>=200?'🐬 Protetora dos Mares':pts>=50?'🌿 Eco-Surfista':'🌱 Semente';
+ document.getElementById('lista').innerHTML=regs.map((r,i)=>`<div class="reg"><div><strong>${r.tipo}</strong> — ${r.praia}<br><small>${r.data} · ${r.peso} kg</small></div><button class="del" onclick="del(${i})">🗑</button></div>`).join('')||'<p style="color:#777">Nenhuma ação registrada ainda.</p>';
 }
 render();
 </script>
